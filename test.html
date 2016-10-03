@@ -1,0 +1,20 @@
+<html>
+<body>
+<script type="text/javascript">
+
+<h1><span>
+hello World!
+</span></h1>
+
+
+var date = new Date();
+var options = { year: "numeric" };
+
+var ret = date.toLocaleDateString("ja-JP-u-ca-japanese", options);
+var edit = ret.substring(4);
+var year = edit.substring(1,4);
+
+document.write("<a href='http://exsample/test/" + year + ".html'>link</a>");
+</script>
+</body>
+</html>
